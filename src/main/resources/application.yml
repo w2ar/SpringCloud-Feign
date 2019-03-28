@@ -1,0 +1,16 @@
+server:
+  port: 8788
+
+spring:
+  application:
+    name: LoadBance-Server-Feign
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka1:8760/eureka/
+      
+#開啟斷路器
+feign:
+  hystrix:
+    enabled: true
